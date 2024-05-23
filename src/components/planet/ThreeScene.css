@@ -1,0 +1,19 @@
+/* src/ThreeScene.css */
+#info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: white;
+    pointer-events: none; /* This ensures the text is not interactive, so it doesn't interfere with the 3D scene */
+    z-index: 1; /* Ensure this is above the particle background */
+  }
+  
+  canvas {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+  }
+  
